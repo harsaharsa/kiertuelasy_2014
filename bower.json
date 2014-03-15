@@ -1,0 +1,23 @@
+{
+  "name": "kiertueläsy",
+  "version": "0.0.1",
+  "authors": [
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "www/components",
+    "www/spec",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "steroids-js": "3.1.x",
+    "angular": "1.2.x",
+    "angular-touch": "1.2.x",
+    "angular-resource": "1.2.x",
+    "angular-animate": "1.2.x",
+    "angular-route": "1.2.x",
+    "underscore": "1.5.x"
+  }
+}

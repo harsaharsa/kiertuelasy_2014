@@ -1,0 +1,269 @@
+/*
+ * Striim.in - Main SASS file
+ *
+ * "Ionic overwrites" = Definitions that overwrite Ionic frameworks default styles.
+ *
+ * Tomi Hiltunen (tomi.hiltunen@appgyver.com)
+ * AppGyver
+ * 2014
+ */
+
+//////////////////////////////////////////////////////////////////////
+// Flexbox mixins
+//////////////////////////////////////////////////////////////////////
+
+// The box itself
+@mixin flexbox()
+	// Old way
+	display: -webkit-box
+	display: -moz-box
+	// Latest specs
+	display: -webkit-flex
+	display: -moz-flex
+	display: flex
+
+// Grow, shrink, size
+@mixin flexbox-flex($input)
+	// Old way
+	-webkit-box-flex: $input
+	-moz-box-flex: $input
+	// New specs
+	-webkit-flex: $input
+	-moz-flex: $input
+	flex: $input
+
+// Aligning children vertically/horizontal (column/row)
+@mixin flexbox-direction($input)
+	// Old way
+	@if $input == "column"
+		-webkit-box-orient: vertical
+		-moz-box-orient: vertical
+		box-orient: vertical
+	@else
+		-webkit-box-orient: horizontal
+		-moz-box-orient: horizontal
+		box-orient: horizontal
+	// Latest specs
+	-webkit-flex-direction: $input
+	-moz-flex-direction: $input
+	flex-direction: $input
+
+// Pack children along the main axis
+@mixin flexbox-pack($input)
+	// Old way
+	-webkit-box-pack: $input
+	-moz-box-pack: $input
+	box-pack: $input
+	// Latest specs
+	-webkit-justify-content: $input
+	-moz-justify-content: $input
+	justify-content: $input
+
+// Align children in the cross-axis
+@mixin flexbox-align($input)
+	// Old way
+	-webkit-box-align: $input
+	-moz-box-align: $input
+	box-align: $input
+	// Latest specs
+	-webkit-flex-align: $input
+	-webkit-align-items: $input
+	align-items: $input
+
+// Grow, shrink, size
+@mixin flexbox-wrap($input)
+	// New specs
+	-webkit-flex-wrap: $input
+	-moz-flex-wrap: $input
+	flex-wrap: $input
+
+//////////////////////////////////////////////////////////////////////
+// Application variables
+//////////////////////////////////////////////////////////////////////
+
+// Color palette
+$app-bg-color: #
+$header-button-color: #2d771a
+$h3-text-color: #1f1f1f
+$h3-border-color: #d9ddde
+
+//////////////////////////////////////////////////////////////////////
+// Basic re-writes
+//////////////////////////////////////////////////////////////////////
+
+*
+	-webkit-user-select: none
+	-webkit-touch-callout: none
+
+input, textarea, [contenteditable] *
+	-webkit-user-select: auto
+
+//////////////////////////////////////////////////////////////////////
+// Basic layout
+//////////////////////////////////////////////////////////////////////
+
+html, body
+	background: $app-bg-color
+	width: 100% !important
+	height: 100% !important
+
+body
+	position: relative
+
+// Makes sure the view is always scrollable even if content isn't long enough.
+.alwaysScrollable
+	min-height: 100.1%
+
+#loader
+	position: absolute
+	top: 0px
+	left: 0px
+	width: 100%
+	height: 100%
+	@include flexbox()
+	@include flexbox-pack(center)
+	@include flexbox-align(center)
+	z-index: 100000
+	> .darkSquare
+		font-size: 60px
+		color: white
+		background-color: rgba(0, 0, 0, 0.6)
+		padding: 30px 40px
+		-webkit-border-radius: 6px
+		border-radius: 6px
+
+
+//////////////////////////////////////////////////////////////////////
+// Header / Navbar
+//////////////////////////////////////////////////////////////////////
+
+.bar
+
+	// Ionic overwrites
+	.button, & > .title + .button:last-child, & > .button + .button:last-child
+		top: 10px
+		font-size: 16px
+		height: 34px
+		color: $header-button-color
+		&:last-child
+			top: 15px
+		.icon, .icon:before
+			font-size: 16px
+
+.has-header
+	top: 42px !important
+
+//////////////////////////////////////////////////////////////////////
+// Headings
+//////////////////////////////////////////////////////////////////////
+
+h3
+	text-align: right
+	font-weight: 300
+	color: $h3-text-color
+	border-bottom: 1px $h3-border-color solid
+	text-transform: uppercase
+
+//////////////////////////////////////////////////////////////////////
+// Video category
+//////////////////////////////////////////////////////////////////////
+
+.category
+	margin-top: 20px
+
+	.videos
+		@include flexbox()
+		@include flexbox-direction(row)
+		@include flexbox-pack(start)
+		@include flexbox-align(start)
+		@include flexbox-wrap(wrap)
+
+		.video
+			@include flexbox-flex(0 1 33.33333%)
+			width: 33.33333%
+			padding: 4px
+			font-size: 16px
+			margin-bottom: 8px
+
+			.poster
+				display: block
+				width: 100%
+				margin-bottom: 4px
+
+//////////////////////////////////////////////////////////////////////
+// Video list
+//////////////////////////////////////////////////////////////////////
+
+//#view_videoList
+
+//////////////////////////////////////////////////////////////////////
+// Video details
+//////////////////////////////////////////////////////////////////////
+
+#view_videoDetails
+
+	.details
+		display: relative
+		width: 100% !important
+
+		.mainPicture
+			img
+				display: block
+				width: 100%
+				max-width: 100%
+
+		.video
+			@include flexbox-flex(0 0 33.33333%)
+			padding: 4px
+			font-size: 16px
+			margin-bottom: 8px
+
+			.poster
+				display: block
+				width: 100%
+				margin-bottom: 4px
+
+		.pegi
+			img
+				display: block
+				width: 100%
+
+//////////////////////////////////////////////////////////////////////
+// Angular animations
+//////////////////////////////////////////////////////////////////////
+
+.animated
+	position: absolute
+	left: 0
+	top: 0
+	bottom: 0
+	background: coral
+	width: 100%
+	display: block
+	border-left: 1px solid black
+
+	&.ng-enter, &.animated.ng-leave
+		-webkit-transition: all 400ms ease
+		-moz-transition: all 400ms ease
+		-o-transition: all 400ms ease
+		transition: all 400ms ease
+
+	&.ng-enter
+		left: 100%
+	&.ng-enter-active
+		left: 0
+	&.ng-leave
+		left: 0
+	&.ng-leave-active
+		left: -100%
+
+	&.reverse
+		background-color: red
+		&.ng-enter
+			left: -100%
+		&.ng-enter-active
+			left: 0
+		&.ng-leave
+			left: 0
+		&.ng-leave-active
+			left: 100%
