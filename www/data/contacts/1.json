@@ -1,6 +1,290 @@
 [
   {
-    "name": "Harri Sarsa",
-    "phone": "040 4878866"
+    "name":"Aiju Heinonen",
+    "phone":"0505951883"
+  },
+  {
+    "name":"Aki Ali-Vehmas",
+    "phone":"044 2870 254"
+  },
+  {
+    "name":"Aleksi Rinta-Kauppila",
+    "phone":"040 7483841"
+  },
+  {
+    "name":"Alexandra Zühlke",
+    "phone":"050 4342707"
+  },
+  {
+    "name":"Antti Heikkilä",
+    "phone":"0405606959"
+  },
+  {
+    "name":"Arla von Konow",
+    "phone":"040 964 9296"
+  },
+  {
+    "name":"Arttu Voutilainen",
+    "phone":"050 465 2446"
+  },
+  {
+    "name":"Clemens Westrup",
+    "phone":"046 8426530"
+  },
+  {
+    "name":"Duy Doan",
+    "phone":"0452372291"
+  },
+  {
+    "name":"Eero Tiilikainen",
+    "phone":"0440887771"
+  },
+  {
+    "name":"Essi Puustinen",
+    "phone":"0504145226"
+  },
+  {
+    "name":"Evgenia Antonova",
+    "phone":"0408527159"
+  },
+  {
+    "name":"Hanna Partanen",
+    "phone":"0408225804"
+  },
+  {
+    "name":"Hanna Skoglund",
+    "phone":"0401438938"
+  },
+  {
+    "name":"Hannu Teittinen",
+    "phone":"050 548 7589"
+  },
+  {
+    "name":"Harri Sarsa",
+    "phone":"040 4878866"
+  },
+  {
+    "name":"Heidi Välisalmi",
+    "phone":"050 3616336"
+  },
+  {
+    "name":"Heikki Kauppinen",
+    "phone":"050 3437633"
+  },
+  {
+    "name":"Heikki Vallinoja",
+    "phone":"050 5026306"
+  },
+  {
+    "name":"Henri 'Ted' Hyttinen",
+    "phone":"0405623782"
+  },
+  {
+    "name":"Henri Pihkala",
+    "phone":"0405768131"
+  },
+  {
+    "name":"Heta Närhi",
+    "phone":"0407479621"
+  },
+  {
+    "name":"Ida Salonen",
+    "phone":"0503800461"
+  },
+  {
+    "name":"Iida Sormanen",
+    "phone":"0405773196"
+  },
+  {
+    "name":"Iiro Perttula",
+    "phone":"0408449988"
+  },
+  {
+    "name":"Iita Kejonen",
+    "phone":"0408268890"
+  },
+  {
+    "name":"Jaakko Kiuru",
+    "phone":"0440720072"
+  },
+  {
+    "name":"Jaakko Vallinoja",
+    "phone":"0503075267"
+  },
+  {
+    "name":"Jari Vepsäläinen",
+    "phone":"0503366119"
+  },
+  {
+    "name":"Joel Pirttimaa",
+    "phone":"0405436870"
+  },
+  {
+    "name":"Joel Vuohelainen",
+    "phone":"040 7382225"
+  },
+  {
+    "name":"Johanna Pennanen",
+    "phone":"040 5943354"
+  },
+  {
+    "name":"Johannes Lehto",
+    "phone":"050 492 5246"
+  },
+  {
+    "name":"Joppe Rauhamaa",
+    "phone":"045 650 2788"
+  },
+  {
+    "name":"Juha-Matti Kahilakoski",
+    "phone":"0408379403"
+  },
+  {
+    "name":"Kaisu Palomäki",
+    "phone":"040 753 4647"
+  },
+  {
+    "name":"Kia Lehti",
+    "phone":"040 539 6640 "
+  },
+  {
+    "name":"Kirsti Larja",
+    "phone":"0408496977"
+  },
+  {
+    "name":"Kristian Penttinen",
+    "phone":"0504065654"
+  },
+  {
+    "name":"Matti-Pekka Laaksonen",
+    "phone":"040 5488337"
+  },
+  {
+    "name":"Meea Kemppainen",
+    "phone":"0407755346"
+  },
+  {
+    "name":"Mika Kuokkanen",
+    "phone":"0407505310"
+  },
+  {
+    "name":"Mikko Laine",
+    "phone":"0408388192"
+  },
+  {
+    "name":"Minni Pirttimaa",
+    "phone":"0405472310"
+  },
+  {
+    "name":"Oona Jalkanen",
+    "phone":"0504023753"
+  },
+  {
+    "name":"Oona Korhonen",
+    "phone":"0509115214"
+  },
+  {
+    "name":"Pekka Lammi",
+    "phone":"050 4303910"
+  },
+  {
+    "name":"Pia Niemi",
+    "phone":"041 5064610"
+  },
+  {
+    "name":"Pihla Melander",
+    "phone":"0445095881"
+  },
+  {
+    "name":"Pipsa Haavisto",
+    "phone":"0405643638"
+  },
+  {
+    "name":"Riina Nieminen",
+    "phone":"0503301284"
+  },
+  {
+    "name":"Roosa Silaste",
+    "phone":"0405680961"
+  },
+  {
+    "name":"Saara Hakkarainen",
+    "phone":"0405878155"
+  },
+  {
+    "name":"Saara Kaija",
+    "phone":"0504359330"
+  },
+  {
+    "name":"Saara Matala",
+    "phone":"0400253474"
+  },
+  {
+    "name":"Saara Matala",
+    "phone":"0400253474"
+  },
+  {
+    "name":"Sami Harju",
+    "phone":"0505482453"
+  },
+  {
+    "name":"Sami Laakso",
+    "phone":"0504666280"
+  },
+  {
+    "name":"Severi Vapalahti",
+    "phone":"0400 419859"
+  },
+  {
+    "name":"Sofia Ahanen",
+    "phone":"0405867229"
+  },
+  {
+    "name":"Susanna Mikkola",
+    "phone":"0408419746"
+  },
+  {
+    "name":"Tapio Kankaanpää",
+    "phone":"0405542013"
+  },
+  {
+    "name":"Tuomas Mikkonen",
+    "phone":"0451696310"
+  },
+  {
+    "name":"Tuuli Klemetti",
+    "phone":"050 3500507"
+  },
+  {
+    "name":"Tuure Parkkinen",
+    "phone":"0505318115"
+  },
+  {
+    "name":"Valeria Pulko",
+    "phone":" 0440625595  "
+  },
+  {
+    "name":"Valtteri Martikainen",
+    "phone":"0440 825878"
+  },
+  {
+    "name":"Veera Narvo",
+    "phone":"040 556 5995"
+  },
+  {
+    "name":"Veikka Kähkänen",
+    "phone":"050 463 0996"
+  },
+  {
+    "name":"Venla Keskinen",
+    "phone":"0400496989"
+  },
+  {
+    "name":"Viivi Mattila",
+    "phone":"0442108249"
+  },
+  {
+    "name":"Ville Saukko",
+    "phone":"0407621652"
   }
 ]

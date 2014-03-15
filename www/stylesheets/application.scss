@@ -1,0 +1,9 @@
+.animated.ng-hide-remove {
+  -webkit-animation: slideInDown 0.5s;
+  animation: slideInDown 0.5s;
+}
+.animated.ng-hide-add {
+  -webkit-animation: slideOutUp 0.5s;
+  animation: slideOutUp 0.5s;
+  display: block !important;
+}

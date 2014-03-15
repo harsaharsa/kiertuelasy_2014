@@ -1,0 +1,7 @@
+[
+  {"name": "Oulu", "url":"comgooglemaps://?center=65.0119984,25.4711951&zoom=15"},
+  {"name": "Tampere", "url":"comgooglemaps://?center=61.4981508,23.7610254&zoom=15"},
+  {"name": "Turku", "url":"comgooglemaps://?center=60.4326518,22.2253995&zoom=15"},
+  {"name": "Lappeenranta", "url":"comgooglemaps://?center=61.0549412,28.1896259&zoom=15"}
+]
+

@@ -1,68 +1,59 @@
 <!DOCTYPE html>
-<html ng-app="StriiminApp">
+<html ng-app="LasyApp">
 <head>
-	<meta charset="utf8">
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-	<title>My Steroids App</title>
+  <meta charset="utf8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>My Steroids App</title>
 
-	<!-- STYLE SHEETS -->
+  <!-- STYLE SHEETS -->
 
-	<link rel="stylesheet" href="/vendor/ionic/css/ionic.css" />
-	<link rel="stylesheet" href="/stylesheets/application.css" />
+  <link rel="stylesheet" href="/vendor/ionic/css/ionic.css" />
+  <link rel="stylesheet" href="/vendor/animate/animate.css" />
+  <link rel="stylesheet" href="/stylesheets/application.css" />
 
-	<!-- JAVA SCRIPTS -->
+  <!-- JAVA SCRIPTS -->
 
-	<!-- Dependencies -->
-	<script src="/javascripts/onerror.js"></script>
-	<script src="/javascripts/console.log.js"></script>
-	<script src="http://localhost/cordova.js"></script>
-	<script src="/components/steroids-js/steroids.js"></script>
+  <!-- Dependencies -->
+  <script src="/javascripts/onerror.js"></script>
+  <script src="/javascripts/console.log.js"></script>
+  <script src="http://localhost/cordova.js"></script>
+  <script src="/components/steroids-js/steroids.js"></script>
 
-	<script src="/components/angular/angular.js"></script>
-	<script src="/components/angular-animate/angular-animate.js"></script>
-	<script src="/components/angular-route/angular-route.js"></script>
-	<script src="/components/angular-touch/angular-touch.js"></script>
-	<script src="/components/angular-resource/angular-resource.js"></script>
-	<script src="/vendor/ionic/js/ionic.bundle.js"></script>
-	<script src="/components/underscore/underscore-min.js"></script>
+  <script src="/components/angular/angular.js"></script>
+  <script src="/components/angular-animate/angular-animate.js"></script>
+  <script src="/components/angular-route/angular-route.js"></script>
+  <script src="/components/angular-touch/angular-touch.js"></script>
+  <script src="/components/angular-resource/angular-resource.js"></script>
+  <script src="/vendor/ionic/js/ionic.bundle.js"></script>
+  <script src="/components/underscore/underscore-min.js"></script>
 
-	<!-- Own production -->
-	<script src="/javascripts/ng-modules/controllers.js"></script>
-	<script src="/javascripts/ng-modules/services.js"></script>
-	<script src="/javascripts/ng-modules/filters.js"></script>
-	<script src="/javascripts/application.js"></script>
+  <!-- Own production -->
+  <script src="/javascripts/ng-modules/controllers.js"></script>
+  <script src="/javascripts/ng-modules/services.js"></script>
+  <script src="/javascripts/ng-modules/filters.js"></script>
+  <script src="/javascripts/application.js"></script>
 
 </head>
 <body class="ionic-body" ng-controller="RootCtrl">
 
-	<!-- Navbar -->
+  <!-- Navbar -->
 
-	<header class="bar bar-header">
-		<!-- Left buttons -->
-		<button class="button button-icon" ng-click="reverseAnimation();showVideoList()">
-			<i class="icon ion-navicon-round"></i>
-		</button>
+  <header class="bar bar-header bar-light">
+    <h1 class="title">Kiertueläsy 2014</h1>
+  </header>
 
-		<!-- The title is incorporated in the navbar bg image! -->
+  <!-- Content -->
+  <div class="animated" ng-class="{reverse: animationIsReversed}" ng-view></div>
 
-		<!-- Right buttons -->
-		<button class="button button-icon">
-			<i class="icon ion-locked"></i>
-		</button>
-	</header>
+  <!-- This app doesn't have a footer at this stage. If you want to add one, add it here. -->
 
-	<!-- Content -->
-	<div class="animated" ng-class="{reverse: animationIsReversed}" ng-view></div>
+  <!-- Loading spinner -->
 
-	<!-- This app doesn't have a footer at this stage. If you want to add one, add it here. -->
-
-	<!-- Loading spinner -->
-
-	<div id="loader" ng-if="isLoading">
-		<div class="darkSquare">
-			<div class="icon ion-loading-c"></div>
-		</div>
-	</div>
+  <div id="loader" ng-if="isLoading">
+    <div class="darkSquare">
+      <div class="icon ion-loading-c"></div>
+    </div>
+  </div>
 
 </body>
 </html>

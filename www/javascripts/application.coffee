@@ -16,9 +16,11 @@ LasyApp = angular.module "LasyApp", [
 LasyApp.config ["$routeProvider", ($routeProvider)->
   # Show frontpage
   $routeProvider.when("/frontpage",
-    templateUrl: "/partials/frontapge.html"
+    templateUrl: "/partials/frontpage.html"
     controller: "FrontpageCtrl"
   ).otherwise(
     redirectTo: "/frontpage"
   )
 ]
+
+steroids.view.setBackgroundColor "#FFFFFF"

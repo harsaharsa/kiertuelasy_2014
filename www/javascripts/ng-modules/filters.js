@@ -6,7 +6,7 @@
 // Module definition
 ////////////////////////////////////////////////////////////////
 
-angular.module("Striimin.filters", []);
+angular.module("Lasy.filters", []);
 
 ////////////////////////////////////////////////////////////////
 // Deep groupBy for movie categories
@@ -14,7 +14,7 @@ angular.module("Striimin.filters", []);
 
 // Based on SO answer: http://stackoverflow.com/a/19537809
 
-angular.module("Striimin.filters").filter("groupBy", [function () {
+angular.module("Lasy.filters").filter("groupBy", [function () {
 
 	return function (data, key) {
 		if (data === null) return;
